@@ -1,0 +1,23 @@
+[project]
+name = "python-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muid Hasan Maruf", email = "maruf22205101237@diu.edu.bd" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "django>=6.1.2",
+    "djangorestframework>=3.18.3",
+    "djangorestframework-simplejwt>=5.5.1",
+    "pillow>=12.3.0",
+    "uuid>=1.30",
+]
+
+[project.scripts]
+python-project = "python_project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
